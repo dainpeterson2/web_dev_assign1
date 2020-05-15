@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Order Now | Dain Peterson</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="PortfolioStyle.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="logo">
+                <img src="Assets/DainLogo.png" alt="logo image" width="80" height="80">
+                <h2><a href="index.html">Dain <span class="textspan">Peterson</span></a></h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="qualifications.html">Qualifications</a></li>
+                    <li><a href="design1.html">Style 1</a></li>
+                    <li><a href="design2.html">Style 2</a></li>
+                    <li class="current"><a href="order.html">Order Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!-- Newsletter-->
+    <section id="newsletter">
+        <div class="container">
+            <h1>Updates</h1>
+            <form>
+                <input type="email" placeholder="Enter Email...">
+                <button type="submit" class="button_1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Main Area -->
+    <main id="main">
+
+        <!-- Section A -->
+        <section id="section-form" class="grid">
+            <div class="formwrap">
+                <!--this will be used later with the grid to span content as a container to push things to the middle-->
+                <h2 class="content-title">Web & Application <span class="textspan">Development</span></h2>
+                <div class="container">
+                    <form class="checkout" id="Checkout">
+                        <div class="items">
+
+                            <fieldset>
+                                <legend>Billing Details</legend>
+                                <div class="formbox">
+
+                                    <h2>Personal Details</h2>
+                                    <input type="text" placeholder="Full Name" name="fullName">
+                                    <input type="text" placeholder="Email Address">
+                                    <input type="text" placeholder="Telephone Number">
+
+                                    <p>Billing Address</p>
+                                    <input type="text" placeholder="Address Line 1" name="addr1">
+                                    <input type="text" placeholder="Address Line 2" name="addr2">
+                                    <input type="text" placeholder="Address Line 3" name="addr3">
+                                    <input type="text" placeholder="Address Line 4" name="addr4">
+                                    <br>
+                                    <input type="text" placeholder="Post Code" name="postalCode" id=postCode>
+
+                                </div>
+
+                                <h2 id="payH">Payment</h2>
+                                <br>
+
+
+
+                                <label for="cname">Name on Card</label><br>
+                                <input type="text" id="cname" name="cardname" placeholder="John More Doe"><br>
+                                <label for="ccnum">Credit card number</label><br>
+                                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"><br>
+                                <label for="expmonth">Exp Month</label><br>
+                                <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="expyear">Exp Year</label><br>
+                                        <input type="text" id="expyear" name="expyear" placeholder="2018">
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="cvv">CVV</label><br>
+                                        <input type="text" id="cvv" name="cvv" placeholder="352">
+                                    </div>
+                                    <label for="fname">Accepted Cards</label>
+                                    <div class="icon-container">
+                                        <img src="https://www.merchantequip.com/image/?logos=v|m|p&height=32"
+                                            alt="Merchant Equipment Store Credit Card Logos" />
+                                    </div>
+                                </div>
+                            </fieldset>
+
+
+                            <div class="group state">
+                                <fieldset>
+
+
+
+
+                                    <!------- Resort Options -------->
+
+
+                                    <legend>Resort Options</legend>
+
+                                    <h2>Number Of Guests</h2>
+
+                                    <div class="order">
+                                        <label for="guests">Party Size:</label>
+                                        <input type="number" min="0" id="guests" size="3" placeholder="0">
+                                    </div>
+
+
+                                    <p>Discounts available for groups. Select Party Rooms at the checkout for stays of 5
+                                        or more people</p>
+
+                                    <div class="info">
+                                        <span>Price: £90 Per Person Standard.</span>
+                                    </div> <br>
+
+                                    <div id="summary">
+
+                                        <label for=location>Cabin Location</label>
+                                        <select id="location">
+                                            <option>- select -</option>
+                                            <option>Luna Woods</option>
+                                            <option>Misty Forest</option>
+                                            <option>Hollow Creek</option>
+                                            <option>Autumn Pond</option>
+                                        </select><br><br>
+
+                                        <label for="BookingDate">Arrival Date</label>
+                                        <input type="date" name="BookingDate" placeholder="YYYY-MM-DD" id="arrival"
+                                            min="2019-06-01" required><br><br>
+
+                                        <label for="days">How long do you inted to stay?</label><br>
+                                        <input type="number" min="0" id="days" size="3" placeholder="Nights">
+
+                                        <!------- Room Options -------->
+                                        <h2>Room Preferences</h2>
+
+                                        <div class="group state">
+                                            <label for="selectRoom">Suite</label>
+                                            <select id="selectRoom">
+                                                <option value="">- select -</option>
+                                                <option value="HNY">Honeymoon</option>
+                                                <option value="PRT">Party Room</option>
+                                                <option value="DBL">Double</option>
+                                                <option value="STD">Standard</option>
+                                                <option value="VIP">VIP Reservation</option>
+                                            </select>
+                                        </div>
+
+
+                                        <!------- Extra Options -------->
+                                        <div class="group method">
+                                            <label for="r-method-noaddreq">Additional Requirements:</label><br>
+                                            <input type="radio" value="noaddreq" name="r_method" id="r-method-noaddreq"
+                                                checked> <label for="r-method-noaddreq">None (free)</label><br>
+
+                                            <input type="radio" value="snack" name="r_method" id="r-method-snack">
+                                            <label for="r-method-snack">Minibar Snacks (£4 / Per person)</label><br>
+
+                                            <input type="radio" value="drinks" name="r_method" id="r-method-drinks">
+                                            <label for="r-method-drinks">Alcoholic Drinks (£10 / Per person)</label>
+                                        </div>
+
+                                        <div class="group special">
+                                            <label for="c-special-gift">Special:</label><br>
+                                            <input type="checkbox" value="YES" name="c-special-gift" id="c-special-gift"
+                                                required> <label for="c-special-gift">Confirm booking?
+                                                (Required)</label><br>
+
+                                            <input type="checkbox" value="YES" name="c-special-email"
+                                                id="c-special-email"> <label for="c-special-email">Sign up for our
+                                                Newsletter</label><br>
+
+                                        </div>
+
+                                        <div class="group notes">
+                                            <label for="txt-notes">Other notes:</label><br>
+                                        </div>
+
+                                        <div class="group calc">
+                                            <p>
+                                                <label for="estimatebtn">Click to estimate:</label><br>
+                                                <input type="submit" value="Estimate Total" id="estimatebtn">
+                                                <input type="text" id="txt-estimate" placeholder="£0.00">
+                                            </p>
+
+                                            <div id="results"></div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+
+                    <script src="script2.js"></script>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section D -->
+        <section id="section-d" class="grid">
+            <div class="box">
+                <h2 class="content-title">Contact Me</h2>              
+            </div>
+            <div class="box">
+                <h2 class="content-title">p017705i@student.staffs.ac.uk</h2>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="grid">
+        <div>Copyright &copy; Dain Peterson Portfolio 2020</div>
+        <div>Portfolio Project by <a
+                href="https://www.google.com/search?q=dain+peterson&oq=dain+peterson&aqs=chrome..69i57j69i60j69i61l2.2377j0j4&sourceid=chrome&ie=UTF-8"
+                target="_blank">Dain Peterson</a></div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+
+/* resets */
+body {
+    margin:0;
+	padding:0;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/* centre the page */
+#myPage {
+	margin:0 auto;
+	width:90%;
+	min-width:300px;
+	max-width:1200px;
+	background:rgb(176, 179, 179);
+}
+
+
+/* header with background image and heading text */
+#mainHeader {
+	height:100px;
+	padding:1em;
+	background:black url(images/logo2.png) no-repeat 1em center;
+
+}
+
+h1 {
+	margin:0;
+	font-family:Helvetica, Tahoma, sans-serif;
+	color:whitesmoke;
+	padding:35px 0px 35px 120px;
+	}
+
+footer {
+	height:100px;
+	padding:1em;
+	background:black;
+	display:none;
+	}
+
+footer a {
+	color:whitesmoke;
+}
+
+/*format main nav in boxes */
+
+#mainNav ul {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	background-color:#3B80C2;
+	width:175px;
+}
+	
+#mainNav li {
+	border:1px rgb(240, 240, 240) solid;
+	padding:1em;
+} 
+	
+#mainNav a {
+	min-height:50px;
+	text-decoration:none;
+	display:block;
+	color:rgb(240, 240, 240);
+	height:100%;
+	width:100%;
+	font-size:1.3em;
+}
+
+#mainNav a:hover {
+	background-color:rgb(240, 240, 240);
+	color:#3B80C2;
+}
+
+/* set hero image to full width of page */
+.hero, .container img {
+	width:100%;
+	height:auto;
+	margin:0;
+	padding:0;
+}
+
+.box, .container {
+    border:solid #3B80C2 2px;
+    background-color: rgb(141, 193, 245);
+	width: 30%;
+	padding:1em;
+}
+
+.container {
+	margin:1em;
+	width: calc(33% - 2em);
+	box-sizing: border-box;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.button {
+    color: whitesmoke;
+    font-size: 1.1em;
+    font-weight: 800;
+	text-decoration: none;
+	padding:.5em;
+	border:0.1em solid #000000;
+	margin:.2em;
+	border-radius:0.12em;
+	box-sizing: border-box;
+	text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+	background-color:rgb(11, 82, 141);
+	text-align:center;
+}
+

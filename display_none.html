@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Styling my page</title>
+		<link rel="stylesheet" href="display_none.css">
+<script>
+function removeElement() {
+document.getElementById("imgbox1").style.display="none";
+}
+function changeVisibility() {
+document.getElementById("imgbox2").style.visibility="hidden";
+}
+function resetElement() {
+document.getElementById("imgbox1").style.display="inline-block";
+document.getElementById("imgbox2").style.visibility="visible";
+}
+</script>
+</head>
+<body>
+
+<div id="imgbox1">
+<img src="images/dcake1.png" width="246" height="246">
+<input type="button" onclick="removeElement()" value="Display None">
+</div>
+<div id="imgbox2">
+<img src="images/dcake2.png" width="246" height="246">
+<input type="button" onclick="changeVisibility()" value="Visibility Hidden">
+</div>
+<div>
+<img src="images/dcake3.png" width="246" height="246">
+<input type="button" onclick="resetElement()" value="Reset All">
+</div>
+</div>
+</div>
+
+</div>
+	
+	</body>
+</html>
+
